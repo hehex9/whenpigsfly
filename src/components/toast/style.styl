@@ -1,0 +1,21 @@
+@import "~style/variables.styl"
+
+.app-toast
+  height 2rem
+  line-height 2rem
+  width 7rem
+  border-radius 1rem
+  background $color-primary-dark
+  color white
+  text-align center
+  position absolute
+  top 1rem
+  left calc(50vw - 3.5rem)
+  box-shadow 0 2px 15px rgba(0,0,0,0.15)
+  transition transform .3s
+  will-change transform
+  transform translateY(-5rem)
+  font-size $font-size-medium
+
+  &.visible
+    transform translateY(0)

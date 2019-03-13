@@ -1,0 +1,52 @@
+@import "~style/variables.styl"
+@import "~style/icons.styl"
+/* TODO: add css-reset */
+
+*, :before, :after
+  padding 0
+  margin 0
+  box-sizing border-box
+
+html
+  font-family 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  -webkit-overflow-scrolling touch
+  -webkit-tap-highlight-color transparent
+  background-color #fafafa
+  color $color-black
+
+body
+  user-select none
+
+a
+  text-decoration none
+
+button
+  border none
+  outline none
+
+#app
+  height 100vh
+
+.hairline::after
+  content ' '
+  position absolute
+  pointer-events none
+  box-sizing border-box
+  left 0
+  right 0
+  height 1px
+  transform scaleY(0.5)
+  background #d9d9d9
+  transform-origin 0 0
+
+.hairline-top::after
+  top 0
+
+.hairline-bottom::after
+  bottom 0
+
+@media screen and (min-width: 400px)
+  html
+    font-size 18px

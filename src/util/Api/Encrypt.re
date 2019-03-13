@@ -1,0 +1,1 @@
+[@bs.module] external md5: string => string = "blueimp-md5";

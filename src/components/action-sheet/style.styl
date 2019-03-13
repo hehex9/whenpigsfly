@@ -1,0 +1,47 @@
+@import "~style/variables.styl"
+
+.action-sheet-container
+  position fixed
+  top 101%
+
+.action-sheet-container.active
+  top 0
+  bottom 0
+  left 0
+  right 0
+  z-index 11
+  position fixed
+
+.action-sheet
+  z-index 12
+  font-size $font-size-normal
+  position absolute
+  width 100%
+  bottom 0
+  background #f0f0f0
+  transform translateY(0)
+  transition all .3s
+
+.action-sheet-container:not(.active)
+  .action-sheet
+    transform translateY(100%)
+
+.action-sheet-overlay
+  background rgba(0, 0, 0, 0.3)
+  position absolute
+  top 0
+  bottom 0
+  left 0
+  right 0
+  z-index 11
+
+.action-sheet-item
+  background white
+  color $color-black
+  text-align center
+  padding-top 0.8rem
+  padding-bottom 0.8rem
+  position relative
+
+.action-sheet-item-cancel
+  margin-top 4px

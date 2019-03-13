@@ -1,0 +1,74 @@
+@import "~style/variables.styl";
+
+$box-size = 6rem
+$gap = 0.8rem
+
+.article-item
+  height $box-size
+  display flex
+  border-radius $border-radius
+  overflow hidden
+  position relative
+  background white
+  box-shadow $shadow
+  margin-bottom 1rem
+
+  a
+    color inherit
+    text-decoration none
+    width 100%
+    display block
+
+  .article-actions
+    position absolute
+    right 0
+    bottom 0
+    z-index 2
+
+.article-item-inner
+  display block
+  width 100%
+
+.article-action-icon
+  display block
+  font-weight bold
+  color $color-primary-dark
+  padding 0.4rem ($gap + 0.1rem)
+  font-size $font-size-large
+
+  .icon
+    display block
+
+  .ion-ios-heart
+    margin-bottom 0.2rem
+    font-size $font-size-normal
+
+  &.unfavorited .ion-ios-heart
+    color $color-disabled
+
+.article-item-cover-wrapper
+  height $box-size
+  width $box-size
+  overflow hidden
+
+.article-item-cover
+  height $box-size
+  background-repeat no-repeat
+  background-size cover
+  background-position center
+  background-color $color-placeholder-bg
+
+.article-item-title
+  position absolute
+  top $gap
+  left $box-size + $gap
+  font-size $font-size-medium
+  padding-right 0.5rem
+  line-height $font-size-xlarge
+
+.article-item-name
+  position absolute
+  bottom $gap
+  left $box-size + $gap
+  color $color-grey
+  font-size $font-size-small

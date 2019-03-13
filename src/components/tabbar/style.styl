@@ -1,0 +1,24 @@
+@import "~style/variables.styl"
+
+.tabbar
+  position fixed
+  bottom 0
+  height $tabbar-height
+  background white
+  width 100%
+  display flex
+  // box-shadow 0 0 8px rgba(0,0,0,0.15)
+  z-index 10
+
+.tabbar-item
+  flex 1
+  display flex
+  justify-content center
+  align-items center
+
+  .icon
+    font-size 1.3rem
+    color $color-primary
+
+  &.tabbar-item--active .icon
+    color $color-primary-dark

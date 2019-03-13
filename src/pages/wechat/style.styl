@@ -1,0 +1,42 @@
+@import "~style/variables.styl"
+
+.wechat-article-list
+  height 100vh
+  overflow-y auto
+  padding 1rem
+
+.wechat-header
+  background white
+  margin-bottom 1rem
+  border-radius $border-radius
+  box-shadow $shadow
+  font-size $font-size-medium
+  padding 1rem
+
+  p
+    color $color-grey
+    margin-top 0.8rem
+
+    &:before
+      content "“"
+      font-size $font-size-large
+      color black
+      padding-right 0.3rem
+
+.wechat-header-info
+  display flex
+  align-items center
+
+  img
+    border-radius 50%
+    height 3rem
+    width 3rem
+    box-shadow 0 0 6px #ddd
+    margin-right 1rem
+
+  strong
+    font-size $font-size-normal
+    color $color-black
+
+.wechat-card-action
+  margin-left auto

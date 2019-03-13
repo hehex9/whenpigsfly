@@ -1,0 +1,1 @@
+let isAuthenticated = () => String.length(Api.sessionKey^) > 0;

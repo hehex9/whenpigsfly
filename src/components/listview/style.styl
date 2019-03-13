@@ -1,0 +1,21 @@
+@import "~style/variables.styl"
+
+.list .time
+  font-size $font-size-small
+  color $color-grey
+  text-align center
+
+.list-loading
+  text-align center
+  font-size $font-size-small
+  color $color-primary-dark
+  transition all .3s
+  transform translateY(3px)
+  height 3rem
+  line-height 3rem
+
+  &.active, &.disabled
+    transform translateY(0)
+
+  &.disabled
+    color $color-disabled

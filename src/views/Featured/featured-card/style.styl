@@ -1,0 +1,37 @@
+@import "~style/variables.styl"
+
+.featured-card
+  position relative
+  border-radius 3px
+  overflow hidden
+  margin 1rem 1rem 0
+  color white
+  box-shadow $shadow
+
+  a
+    display block
+
+  .featured-cover
+    height 0
+    padding-top 42%
+    background-repeat no-repeat
+    background-size cover
+    background-color $color-placeholder-bg
+
+.featured-card-info
+  padding 1em
+  background white
+  position relative
+  font-size $font-size-medium
+
+  p
+    color $color-black
+
+  span
+    color $color-grey
+    font-weight bold
+    color white
+    position absolute
+    padding-bottom 0.5rem
+    left 0.8rem
+    bottom 100%
